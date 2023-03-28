@@ -3,5 +3,5 @@
   { "id": 2, "title": "iPhone 14", "capacity": 256, "price": 589900 },
   { "id": 3, "title": "iPhone 14 Plus", "capacity": 256, "price": 649900 },
   { "id": 4, "title": "iPhone 14 Pro", "capacity": 256, "price": 679900 },
-  { "id": 4, "title": "iPhone 14 Pro Max", "capacity": 256, "price": 729900 }
+  { "id": 5, "title": "iPhone 14 Pro Max", "capacity": 256, "price": 729900 }
 ]
