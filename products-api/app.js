@@ -1,5 +1,6 @@
 const { request, response } = require("express");
 const express = require("express");
+const Sequelize = require("sequelize");
 const productsJSON = require("./products.json");
 
 const PORT = 3000;
@@ -27,6 +28,13 @@ app.get("/products/:id", (request, response) => {
   response.json(product);
 });
 
-app.listen(PORT, () => {
-  console.log(`App listening on http://localhost:${PORT}`);
+const sequelize = new Sequelize({
+  dialect: "sqlite",
+  storage: "./database.sqlite",
+});
+
+sequelize.sync().then(() => {
+  app.listen(PORT, () => {
+    console.log(`App listening on http://localhost:${PORT}`);
+  });
 });
