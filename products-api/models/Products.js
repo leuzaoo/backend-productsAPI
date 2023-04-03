@@ -1,15 +1,15 @@
 function Products(sequelize, DataTypes) {
   return sequelize.define("products", {
     name: {
-      type: Sequelize.DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     capacity: {
-      type: Sequelize.DataTypes.NUMBER,
+      type: DataTypes.NUMBER,
       allowNull: false,
     },
     price: {
-      type: Sequelize.DataTypes.NUMBER,
+      type: DataTypes.NUMBER,
       allowNull: false,
     },
   });
