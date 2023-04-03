@@ -2,10 +2,10 @@
   "name": "products-api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "./src/app.js",
   "scripts": {
-    "serve": "node app.js",
-    "serve:dev": "nodemon app.js"
+    "serve": "node ./src/app.js",
+    "serve:dev": "nodemon ./src/app.js"
   },
   "keywords": [],
   "author": "",
