@@ -22,6 +22,10 @@ function routes(app) {
 
     response.json(product);
   });
+
+  app.post("products", (request, response) => {
+    Products();
+  });
 }
 
 module.exports = routes;
