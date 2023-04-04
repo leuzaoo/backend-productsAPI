@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize");
-const Products = require("./models/Products");
+const Products = require("../models/Products");
 
 const sequelize = new Sequelize({
   dialect: "sqlite",
@@ -8,4 +8,7 @@ const sequelize = new Sequelize({
 
 Products(sequelize, Sequelize.DataTypes);
 
-module.exports = sequelize;
+module.exports = {
+  sequelize,
+  Products: Products(sequelize, Sequelize.DataTypes),
+};
